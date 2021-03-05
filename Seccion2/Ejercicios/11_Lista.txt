@@ -1,0 +1,21 @@
+void main(){
+  
+  /*Para establecer el tipo de datos que almacena la lista es necesario definirlo
+   * ente <>, por ejemplo: <int>
+   * Si no se define el tipo de datos, la lista se creará como dinámica y aceptará
+   * agregar cualquier tipo de datos*/
+  List<int> numeros = [1,2,3,4,5];
+  print(numeros);
+  
+  numeros.add(6);
+  print(numeros);
+  
+  //Lista de tamaño fijo
+  List masNumeros = List(10);
+  print(masNumeros);
+  //masNumeros.add(1); Esto no es correcto porque es una lista de tamaño fijo
+  
+  //Asignar valores
+  masNumeros[0] = 1;
+  print(masNumeros);
+}

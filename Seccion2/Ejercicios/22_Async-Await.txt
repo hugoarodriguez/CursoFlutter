@@ -1,0 +1,24 @@
+/*Para utilizar el "await" es necesario que este se encuentre dentro de
+ * una función "async"*/
+
+void main() async{
+  print('Estamos a punto de pedir datos');
+  
+  final data = await httpGet('https://api.nasa.com/aliens');
+  
+  print(data);
+  
+  print('Última Línea');
+}
+
+Future<String> httpGet(String url){
+  return Future.delayed(new Duration(seconds: 4), () {
+    return 'Hola Mundo';
+  });
+}
+
+//NOTA: No es permitido crear constructores asincronos, ejemplo:
+/*class MiClase{
+  MiClase() async{
+  }
+}*/

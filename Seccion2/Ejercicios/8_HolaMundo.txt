@@ -1,0 +1,9 @@
+void main(){
+  print('Hola Mundo');
+  
+  String nombre = 'Hugo';
+  
+  //Se pueden imprimir variables de las siguientes formas
+  print('Hola ' + nombre);
+  print('Hola $nombre');
+}

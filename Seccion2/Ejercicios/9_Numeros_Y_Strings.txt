@@ -1,0 +1,22 @@
+void main(){
+  //Números
+  
+  /*NOTA: A los números de tipo double siempre se les debe asignar la presición
+   * por ejemplo, si se declara double num = 1 el compilador lo podría interpretar
+   * como un número entero y no como un double, y en asignaciones futuras a esa misma
+   * variable podría generar error.*/
+  
+  int empleados = 10;
+  double pi = 3.141592;
+  var numero = 1.0;
+  
+  print('$empleados - $pi - $numero');
+  
+  //String
+  String nombre = 'Hugo';
+  print(nombre);
+  
+  //Extraer caracteres de la cadena
+  print(nombre[0]);//Primera letra
+  print(nombre[nombre.length - 1]);//Última letra
+}

@@ -1,0 +1,20 @@
+//Los futures son importantes para realizar tareas asincronas
+
+void main(){
+  print('Estamos a punto de pedir datos');
+  
+  /*Con httpGet('https://api.nasa.com/aliens') únicamente disparamos la ejecución
+    del Future*/
+  //Con .then((data) accesamos a los datos que retorna el método Future
+  httpGet('https://api.nasa.com/aliens').then((data){
+    print(data);//Imprimimos lo que se almacena en "data"
+  });
+  
+  print('Última Línea');
+}
+
+Future<String> httpGet(String url){
+  return Future.delayed(new Duration(seconds: 4), () {
+    return 'Hola Mundo';
+  });
+}

@@ -1,0 +1,7 @@
+Los archivos están nombrados indicando el número de vídeo
+de la sección seguido del tema tratado en ese vídeo.
+
+Por ejemplo: 8_HolaMundo indica que en el vídeo #8 se 
+realizó un ejercicio haciendo el "Hola Mundo".
+
+Repositorio del curso: https://github.com/Klerith/dart-basics

@@ -1,0 +1,25 @@
+void main(){
+  saludar();
+  
+  String mensaje = saludar2(nombre: 'Hugo', texto: 'Hola,');
+  print(mensaje);
+  
+  String mensaje2 = saludar2(nombre: 'Hugo', texto: 'Hola,');
+  print(mensaje2);
+}
+
+void saludar(){
+  print('Hola');
+}
+
+/*Al colocar los parámetros entre llaves{} estamos indicando que al invocarse el
+ * método se debe definir el valor para cada parámetro escribiendo el nombre del
+ * parémtro seguido de dos puntos y su valor, así: "parametro: valor"*/
+String saludar2({String texto, String nombre}){
+  return '$texto $nombre';
+}
+
+//Nota: Es importante declarar el tipo de datos para cada método, variable, etc
+
+//El "=>" indica un "return"
+String saludar3({String texto, String nombre}) => '$texto $nombre';

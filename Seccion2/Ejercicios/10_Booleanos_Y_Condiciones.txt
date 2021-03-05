@@ -1,0 +1,20 @@
+void main(){
+  bool activado = true;
+  print(activado);
+  
+  //Se puede cambiar el valor del booleano de la siguiente forma
+  activado = !activado;
+  
+  if(activado){
+    print('El motor está funcionando');
+  } else {
+    print('Está apagado');
+  }
+  
+  //También se puede evaluar directamente en la condición
+  if(!activado){
+    print('El motor está funcionando');
+  } else {
+    print('Está apagado');
+  }
+}

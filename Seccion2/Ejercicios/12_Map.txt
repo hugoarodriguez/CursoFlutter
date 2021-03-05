@@ -1,0 +1,28 @@
+void main(){
+  //Ejemplo 1
+  String propiedad = 'soltero';
+  
+  Map<String, dynamic> persona = {
+    'nombre' : 'Hugo',
+    'edad'   : 22,
+    'soltero': true
+  };
+  
+  //De esta forma accedemos a los valores
+  print(persona['nombre']);
+  print(persona['edad']);
+  print(persona[propiedad]);
+  
+  //Ejemplo 2
+  Map<int, String> personas = {
+    1: 'Tony',
+    2: 'Peter',
+    9: 'Strange'
+  };
+  
+  personas.addAll({4 : 'Banner'});
+  
+  print(personas);
+  //De esta forma accedemos a los valores
+  print(personas[2]);
+}
